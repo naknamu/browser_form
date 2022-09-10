@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    font-family: 'Poppins', sans-serif;
+}
+
+.content{
+    width: 400px;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+form h1{
+    text-align: center;
+    color: #0f2027;
+}
+
+form button{
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    color: white;
+    background-color: rgb(41, 57, 194);
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    opacity: 0.8;
+    transition: 300ms;
+}
+
+form button:hover{
+    opacity: 1;
+}
+
+form button:active{
+    opacity: 0.8;
+}
+
+.input-control{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input{
+    border: 2px solid #dddddd;
+    border-radius: 4px;
+    display: block;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-control input:focus{
+    outline: 0;
+}
+
+.input-control.success input{
+    border-color: #09c372;
+}
+
+.input-control.error input{
+    border-color: #ff3860;
+}
+
+.input-control .error{
+    height: 14px;
+    font-size: 12px;
+    color: #ff3860;
+}
+
+#overlay{
+    position: fixed; /* Positioning and size */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128,128,128,0.5); /* color */
+    display: none;
+    /* display: block; */
+}
+
+#high_five{
+    position: fixed;
+    background-color: white;
+    height: 50vh;
+    width: 50vw;
+    transform: translate(50%, 50%);
+    display: flex;
+    flex-direction: column;
+}
+
+#high_five img{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: fixed;
+}
+
+#high_five a{
+    font-size: 12px;
+    text-decoration: none;
+    text-align: center;
+    z-index: 1;
+}
+
+#high_five svg{
+    width: 50px;
+    height: 50px;
+    z-index: 10;
+    position: fixed;
+    transition: .2s;
+}
+
+#high_five .close:hover{
+    transform: scale(1.5);
+}
+
+#high_five .close:active{
+    transform: scale(1);
+}
+
+
+
+

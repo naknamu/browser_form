@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+        <form id="form" action="/">
+            <h1>Registration</h1>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="country">Country</label>
+                <input type="country" name="country" id="country">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="zip">Zip Code</label>
+                <input type="number" name="zip" id="zip">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password2">Confirm Password</label>
+                <input type="password" name="password2" id="password2">
+                <div class="error"></div>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <div id="overlay">
+            <div id="high_five">
+                <svg class="close" style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M19,3H16.3H7.7H5A2,2 0 0,0 3,5V7.7V16.4V19A2,2 0 0,0 5,21H7.7H16.4H19A2,2 0 0,0 21,19V16.3V7.7V5A2,2 0 0,0 19,3M15.6,17L12,13.4L8.4,17L7,15.6L10.6,12L7,8.4L8.4,7L12,10.6L15.6,7L17,8.4L13.4,12L17,15.6L15.6,17Z" />
+                </svg>
+                <img src="high_five.jpg" alt="high five!">
+                <a href="https://www.freepik.com/free-vector/high-five-hands-concept-illustration_30875270.htm#query=high%20five&position=33&from_view=search">Image by storyset on Freepik</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
